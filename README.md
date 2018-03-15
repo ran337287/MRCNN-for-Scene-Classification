@@ -7,14 +7,14 @@ Scene Classification with Multi-Resolution CNNs](https://arxiv.org/pdf/1610.0111
 ### Datasets and Pretrained Models
 * Datasets URL: https://pan.baidu.com/s/1j4pSD0--Elo0QyAkmSOcBg
 
-ln -s $DOWNLOAD_PATH $MRCNN/data/
+    ln -s $DOWNLOAD_PATH $MRCNN/data/
 
 * Pretrained models for extra network URL: https://pan.baidu.com/s/11O7FQLyYC81WX4h7-1MPvA
 
-ln -s $DOWNLOAD_PATH $MRCNN/resnet/
+    ln -s $DOWNLOAD_PATH $MRCNN/resnet/
 
 * Pretrained model for MRCNN URL: https://pan.baidu.com/s/10b8coHP3RW9yX-uAPmTauA     Extrac code: 0hrr
 
-ln -s $DOWNLOAD_PATH $MRCNN/xq_model/
+   ln -s $DOWNLOAD_PATH $MRCNN/xq_model/
 
 ### Run
