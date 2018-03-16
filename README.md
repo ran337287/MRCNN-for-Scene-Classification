@@ -4,7 +4,7 @@ Pytorch implementation of MRCNN for SceneClassification.
 We refer to the structure in paper [Knowledge Guided Disambiguation for Large-Scale
 Scene Classification with Multi-Resolution CNNs](https://arxiv.org/pdf/1610.01119.pdf)
 
-### Datasets and Pretrained Models
+## Datasets and Pretrained Models
  1. datasets URL: https://pan.baidu.com/s/1j4pSD0--Elo0QyAkmSOcBg
 ```Shell
 ln -s $DOWNLOAD_PATH $MRCNN/data/
@@ -17,7 +17,7 @@ ln -s $DOWNLOAD_PATH $MRCNN/resnet/
 ```Shell
 ln -s $DOWNLOAD_PATH $MRCNN/xq_model/
 ``` 
-### Train 
+## Train 
 cd $MRCNN/
 
 run python train_MRCNN.py
