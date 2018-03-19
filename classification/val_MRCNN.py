@@ -37,7 +37,7 @@ model_root = '../xq_model/'
 model_name = 'resnet50'
 model_path = '171125_00_0_exlr30_MRCNN_densenet_56.pth'
 pre_trained_model = model_root + model_path
-my_model = model.resnet50(False,pre_trained_model,n_class+n_class_extra)
+my_model = model.resnet50(True,pre_trained_model,n_class+n_class_extra)
 
 save_json = '../xq_result/{0}_{1}.json'.format(model_path,mode)
 if cuda:
