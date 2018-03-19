@@ -85,7 +85,7 @@ data_json={
 	'valid':valid_data_root + 'scene_validation_annotations_20170908.json',
 	'test':test_data_root + 'scene_test_a_images_20170922.json'
 }
-ImageData = imgloader.ImageData_softlabel
+ImageData = imgloader.ImageData
 dataset = ImageData(data_root=data_path[mode], data_list=data_json[mode],
 	                    transform=img_transform[mode])
 data_loader = torch.utils.data.DataLoader(dataset, batch_size=BatchSize,
@@ -103,7 +103,7 @@ for epoch in xrange(1):
 
 	while j < len(data_loader):
 		data = data_iter.next()
-		if mode == 'val':
+		if mode == 'valid':
 			img, _, img_path = data
 		if mode == 'test':
 			img, img_path = data
@@ -122,7 +122,7 @@ for epoch in xrange(1):
 			# print img_path[k]
 			temp = {u'image_id': [], u'label_id': []}
 			predict_label = np.argsort(-pred)[:3]
-			predict_label = utils.LabelMap(predict_label, 'inverted_map')
+			#predict_label = utils.LabelMap(predict_label, 'inverted_map')
 			temp[u'image_id'] = img_path[k]
 			temp[u'label_id'] = predict_label.tolist()
 			valid_info.append(temp)
