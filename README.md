@@ -22,3 +22,10 @@ cd $MRCNN/
 
 run python train_MRCNN.py
 
+## Test
+cd $MRCNN/
+
+mkdir xq_result
+
+run python val_MRCNN.py
+
