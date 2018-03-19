@@ -18,12 +18,12 @@ ln -s $DOWNLOAD_PATH $MRCNN/resnet/
 ln -s $DOWNLOAD_PATH $MRCNN/xq_model/
 ``` 
 ## Train 
-cd $MRCNN/
+cd $MRCNN/classification
 
 run python train_MRCNN.py
 
 ## Test
-cd $MRCNN/
+cd $MRCNN/classification
 
 mkdir xq_result
 
